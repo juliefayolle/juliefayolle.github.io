@@ -1,31 +1,28 @@
 <main>
   <section id="accueil" class="flex-container flex-wrap direction-column section-container element-style">
     <h1>FAYOLLE<br>JULIE</h1>
-    <h2>Web developer</h2>
+    <h3>Web developer</h2>
   </section>
   <section id="profil" class="flex-container flex-wrap section-container element-style">
-    <div class="half-size min-size-small flex-container padding">
-      <img class="img-size" src="profil.jpg">
-    </div>
-    <div class="half-size min-size-small">
-      <h3>Profil et expériences</h3>
 
-<form id="knowMe" action="./quizProfil.php">
-  <fieldset>
-    <h3><b>Q1 : </b>Quel diplôme ai-je obtenu en juin 2016 ? <br></h3>
+      <h3>~ Profil et expériences ~</h3>
+
+<form class="flex-wrap flex-center" id="knowMe" action="./quizProfil.php">
+  <fieldset id="diplome" class="form-quiz">
+    <h4><b>Q1 : </b>Quel diplôme ai-je obtenu en juin 2016 ? <br></h4>
     <br><input type=radio name="Q1" value=0>DUT Carrière Juridique</input>
     <br><input type=radio name="Q1" value=1>BTS Communication</input>
     <br><input type=radio name="Q1" value=0>Brevet des collèges</input>
     <br><input type=radio name="Q1" value=0>Docteur en Médecine</input>
   </fieldset>
 
-  <fieldset>
-    <h3><b>Q2 : </b>Vrai ou Faux? En octobre 2017, j'ai intégré une formation de developpeur d'application web et mobile au sein de l'IT-Akademy. (V/F)<br></h3>
+  <fieldset id="formation" class="form-quiz">
+    <h4><b>Q2 : </b>Vrai ou Faux? En octobre 2017, j'ai intégré une formation de developpeur d'application web et mobile au sein de l'IT-Akademy. (V/F)<br></h4>
     <br><input type=text name="Q2" placeholder="Vrai/Faux">
     </fieldset>
 
-  <fieldset>
-    <h3><b>Q3 : </b>Quels traits de ma personnalité pourraient, selon moi, m'être utiles dans ce nouveau métier ?<br></h3>
+  <fieldset id="personnalite" class="form-quiz">
+    <h4><b>Q3 : </b>Quels traits de ma personnalité pourraient, selon moi, m'être utiles dans ce nouveau métier ?<br></h4>
     <br><input type=checkbox name="Q3a" value=1>Curieuse</input>
     <br><input type=checkbox name="Q3b" value=0>Réservé</input>
     <br><input type=checkbox name="Q3c" value=0>Souriante</input>
@@ -34,30 +31,23 @@
     <br><input type=checkbox name="Q3f" value=0>Emotive</input>
   </fieldset>
 
-  <fieldset>
-    <h3><b>Q4 : </b>Je vais pouvoir mettre à profit toutes les compétences acquises au cours de la formation lors d'un stage en entreprise en...<br></h3>
+  <fieldset id="stage" class="form-quiz">
+    <h4><b>Q4 : </b>Je vais pouvoir mettre à profit toutes les compétences acquises au cours de la formation lors d'un stage en entreprise en...<br></h4>
     <select>
       <option name="Q4" value="0">Décembre 2017</option>
       <option name="Q4" value="1">Janvier 2018</option>
       <option name="Q4" value="0">Avril 2018</option>
     </select>
   </fieldset>
-  <a data-action="getResult" href="#">Resultat</a>
+  <a class="form-quiz text-align-center style-button" data-action="getResult" href="#">Résultats</a>
 </form>
 
 
-
-
-
-
-      </div>
   </section>
   <section id="competences" class="flex-container flex-wrap section-container element-style">
-    <div class="half-size min-size-small flex-container padding">
-      <img class="img-size" src="code.jpg">
-    </div>
+  
     <div class="half-size min-size-small">
-      <h3 class="flex-container">Compétences</h3>
+      <h3 class="flex-container">~ Compétences ~</h3>
       <div class="flex-container">
       <div>
       <ul class="list-no-style">
@@ -66,6 +56,7 @@
         <li>CSS</li>
         <li>Bootstrap</li>
         <li>Jqueries</li>
+        <li>PHP</li>
       </ul>
       </div>
       <div class="padding-competences">
@@ -105,13 +96,20 @@
             <i class="fa fa-circle-o padding-competences" aria-hidden="true"></i>
             <i class="fa fa-circle-o padding-competences" aria-hidden="true"></i>
           </li>
+          <li>
+            <i class="fa fa-circle padding-competences" aria-hidden="true"></i>
+            <i class="fa fa-circle-o padding-competences" aria-hidden="true"></i>
+            <i class="fa fa-circle-o padding-competences" aria-hidden="true"></i>
+            <i class="fa fa-circle-o padding-competences" aria-hidden="true"></i>
+            <i class="fa fa-circle-o padding-competences" aria-hidden="true"></i>
+          </li>
       </div>
      </div>
    </div>
   </section>
   <section id="contact" class="flex-container flex-wrap flex-wrap-reverse section-container element-style">
     <div class="half-size min-size-small">
-      <h3 class="flex-container">Contactez moi</h3>
+      <h3 class="flex-container">~ Contactez moi ~</h3>
       <div class="flex-container">
         <div>
         <ul class="list-no-style">
@@ -127,7 +125,7 @@
       </div>
     </div>
     <div class="half-size min-size-small flex-container">
-      <img class="img-size" src="machine-ecrire.jpg">
+      <img class="img-size" src="img/machine-ecrire.jpg">
     </div>
   </section>
 </main>
