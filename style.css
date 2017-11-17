@@ -16,7 +16,7 @@ html {
   .direction-column {
     flex-direction: column;
   }
-  
+
   .list-no-style {
     margin-top: 0;
     margin-bottom: 0;
@@ -73,10 +73,52 @@ html {
     width: 350px;
     height: auto;
 }
-.logo-size {
-  width: 50px;
-  height: auto;
+
+
+
+.compétences div {
+  width: 100px;
+  height: 100px;
+  background-color: white;
 }
+
+.logohtml {
+  background-image: url("img/logoHtml.png");
+  background-size: contain;
+  margin: 30px;
+}
+.logocss {
+  background-image: url("img/logoCss.png");
+  background-size: contain;
+  margin: 30px;
+}
+.logobootstrap {
+  background-image: url("img/logoBootstrap.png");
+  background-size: contain;
+  margin: 30px;
+}
+.logophp {
+  background-image: url("img/logoPhp.svg");
+  background-size: contain;
+  margin: 30px;
+}
+.logojquery {
+  background-image: url("img/logoJquery.gif");
+  background-size: contain;
+  margin: 30px;
+}
+.logomysql {
+  background-image: url("img/logoMysql.png");
+  background-size: contain;
+  margin: 30px;
+}
+
+
+
+
+
+
+
 .padding-competences {
     padding-left: 5px;
 }
@@ -106,6 +148,49 @@ html {
 .style-reponses {
   text-align: center;
   color: #1AC607;
+}
+.imgjsgame {
+  margin: 30px;
+  width: 250px;
+  height: 250px;
+  background-image: url("img/jsgameaccueil.jpeg");
+  background-size: 100%;
+}
+.imgjsgame:hover {
+  margin: 30px;
+  width: 250px;
+  height: 250px;
+  background-image: url("img/jsgame.jpeg");
+}
+.imgrealisations {
+  margin: 30px;
+  width: 250px;
+  height: 250px;
+}
+.cadre {
+  background-color: #ffffff;
+    width: 500px;
+    margin: 0 auto 15px auto;
+    padding: 10px;
+    border: 2px solid gray;
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4));
+}
+.size-form {
+  width: 70%;
+}
+legend {
+    color: gray;
+    margin-left: 175px;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    padding: 0;
+}
 }
 /**
  --------------BODY------------------
@@ -181,9 +266,23 @@ main h4 {
 }
 main input {
   outline: none;
-
+}
+section.contact.socialicons {
+  width: 222px;
+  height: 72px;
+  margin: 0 auto 30px auto;
+}
+.socialicons a:visited {
+  color: black;
+}
+.socialicons a {
+  margin: 10px;
+  color: inherit;
 }
 
+section.realisations img {
+  margin: 100px;
+}
 #accueil {
   background-image: url(img/backgroundgrey.png);
 }
@@ -204,6 +303,7 @@ main input {
 #realisations {
   background-image: url(img/backgroundwhite.png);
 }
+
 #contact {
   background-image: url(img/backgroundgrey.png);
   font-size: 20px;

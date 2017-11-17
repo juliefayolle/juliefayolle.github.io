@@ -9,8 +9,9 @@
 
 
 <form class="flex-wrap flex-center">
-  <fieldset id="diplome" class="form-quiz">
-    <h4><b>Q1 : </b>Quel diplôme ai-je obtenu en juin 2016 ? <br></h4>
+  <fieldset id="diplome" class="form-quiz cadre">
+    <legend>Question 1 : </legend>
+    <h4>Quel diplôme ai-je obtenu en juin 2016 ? <br></h4>
     <br>
     <label>
       <input type=radio name="Q1" value=0>DUT Carrière Juridique
@@ -29,15 +30,17 @@
     </label>
   </fieldset>
 
-  <fieldset id="formation" class="form-quiz">
-    <h4><b>Q2 : </b>Vrai ou Faux? En octobre 2017, j'ai intégré une formation de developpeur d'application web et mobile au sein de l'IT-Akademy. (V/F)<br></h4>
+  <fieldset id="formation" class="form-quiz cadre">
+    <legend>Question 2 :</legend>
+    <h4>Vrai ou Faux? En octobre 2017, j'ai intégré une formation de developpeur d'application web et mobile au sein de l'IT-Akademy. (V/F)<br></h4>
     <br>
     <label for="vraiFaux"></label>
     <input id="vraiFaux" type=text name="Q2" value="" placeholder="Vrai/Faux">
     </fieldset>
 
-  <fieldset id="personnalite" class="form-quiz">
-    <h4><b>Q3 : </b>Quels traits de ma personnalité pourraient, selon moi, m'être utiles dans ce nouveau métier ?<br></h4>
+  <fieldset id="personnalite" class="form-quiz cadre">
+    <legend>Question 3 : </legend>
+    <h4>Quels traits de ma personnalité pourraient, selon moi, m'être utiles dans ce nouveau métier ?<br></h4>
     <br>
     <label>
       <input type=checkbox name="Q3a" value=1>Curieuse
@@ -64,68 +67,78 @@
     </label>
   </fieldset>
 
-  <fieldset id="stage" class="form-quiz">
-    <h4><b>Q4 : </b>Je vais pouvoir mettre à profit toutes les compétences acquises au cours de la formation lors d'un stage en entreprise en...<br></h4>
+  <fieldset id="stage" class="form-quiz cadre">
+    <legend>Question 4 : </legend>
+    <h4>Je vais pouvoir mettre à profit toutes les compétences acquises au cours de la formation lors d'un stage en entreprise en...<br></h4>
     <label for="mois"></label>
     <select id="mois">
-      <option name="Q4" value="0">Décembre 2017</option>
-      <option name="Q4" value="1">Janvier 2018</option>
-      <option name="Q4" value="0">Avril 2018</option>
+      <optgroup label="2017">
+        <option name="Q4" value="0">Décembre</option>
+      </optgroup>
+      <optgroup label="2018">
+        <option name="Q4" value="1">Janvier</option>
+        <option name="Q4" value="0">Avril</option>
+      </optgroup>
     </select>
   </fieldset>
   <a class="form-quiz text-align-center style-button" data-action="getResult" href="#">Résultats</a>
 </form>
-
-
   </section>
-  <section id="competences" class="flex-container element-style">
 
+
+  <section id="competences" class="flex-container element-style">
     <div>
       <h3 class="flex-container">~ Compétences ~</h3>
-      <div class="flex-container direction-row">
-      <ul class="list-no-style">
-        <li><img class="logo-size" src="img/logoHtml.png"></li>
-        <li><img class="logo-size" src="img/logoCss.png"></li>
-        <li><img class="logo-size" src="img/logoBootstrap.png"></li>
-      </ul>
-      <ul class="list-no-style">
-        <li><img class="logo-size" src="img/logoPhp.svg"></li>
-        <li><img class="logo-size" src="img/logoJquery.gif"></li>
-        <li><img class="logo-size" src="img/logoMysql.png"></li>
-      </ul>
+      <div class="flex-container">
+        <div class="competences">
+          <div class="logohtml"></div>
+          <div class="logocss"></div>
+          <div class="logobootstrap"></div>
+        </div>
+        <div class="competences">
+          <div class="logophp"></div>
+          <div class="logojquery"></div>
+          <div class="logomysql"></div>
+        </div>
      </div>
    </div>
   </section>
-  <section id="realisations" class="flex-container flex-wrap section-container element-style">
-    <h3 class="flex-container">~ Mes réalisations ~</h3>
-    <div class="form-quiz">
-      <img src="http://fakeimg.pl/250x250/">
+  <section id="realisations" class="flex-container flex-wrap section-container element-style direction-column ">
+    <h3>~ Mes réalisations ~</h3>
+    <div class="flex-container">
+      <a href="/jsGame"><div class="imgjsgame"></div></a>
+      <div>
+        <img class="imgrealisations" src="http://fakeimg.pl/250x250/">
+      </div>
     </div>
-    <div class="form-quiz">
-      <img src="http://fakeimg.pl/250x250/">
-    </div>
-    <div class="form-quiz">
-      <img src="http://fakeimg.pl/250x250/">
-    </div>
-    <div class="form-quiz">
-      <img src="http://fakeimg.pl/250x250/">
+    <div class="flex-container">
+      <div>
+        <img class="imgrealisations" src="http://fakeimg.pl/250x250/">
+      </div>
+      <div>
+        <img class="imgrealisations" src="http://fakeimg.pl/250x250/">
+      </div>
     </div>
   </section>
   <section id="contact" class="flex-container flex-wrap flex-wrap-reverse section-container element-style">
     <div class="half-size min-size-small">
       <h3 class="flex-container">~ Contactez moi ~</h3>
+      <section class="socialicons">
+        <ul class="list-no-style flex-container">
+          <li class="vertical-align"><a class="hvr-shrink" href="https://github.com/juliefayolle" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
+          <li class="vertical-align"><a class="hvr-shrink" href="https://www.facebook.com/julie.fayolle.7" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
+          <li class="vertical-align"><a class="hvr-shrink" href="img/zone.png" target="_blank"><i class="fa fa-map-signs fa-2x" aria-hidden="true"></i></a></li>
+        </ul>
+      </section>
       <div class="flex-container">
-        <div>
-        <ul class="list-no-style">
-          <li><i class="fa fa-envelope-o padding-icone" aria-hidden="true"></i></li>              <li><i class="fa fa-location-arrow padding-icone" aria-hidden="true"></i></li>
-        </ul>
-      </div>
-      <div>
-        <ul class="list-no-style">
-          <li>fayolle.julie96@gmail.com</li>
-          <li>Lyon/St Etienne</li>
-        </ul>
-      </div>
+        <form name="contact" action="envoie.php" method="post">
+          <input class="size-form" type="text" name="nom" placeholder="Nom">
+          <input class="size-form" type="email" name="email" placeholder="Email">
+          <input class="size-form" type="text" name="objet" placeholder="Objet">
+          <textarea class="size-form" name="message" rows="6" cols="41" placeholder="Message"></textarea><br>
+          <input type="submit" value="Envoyer">
+
+        </form>
       </div>
     </div>
     <div class="half-size min-size-small flex-container">
